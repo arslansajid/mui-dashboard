@@ -1,0 +1,64 @@
+{
+  "name": "mui-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://github.com/arslansajid/mui-dashbaord.git",
+  "author": "Arslan Sajid <arslansajid951@@gmail.com>",
+  "dependencies": {
+    "@date-io/dayjs": "1.x",
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.47",
+    "@material-ui/pickers": "^3.2.10",
+    "@nivo/axes": "^0.61.0",
+    "@nivo/bump": "^0.61.1",
+    "@nivo/core": "^0.61.0",
+    "@nivo/line": "^0.61.1",
+    "@nivo/pie": "^0.61.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "d3-scale": "^3.2.1",
+    "dayjs": "^1.8.23",
+    "express-http-proxy": "^1.6.0",
+    "is-mobile": "^2.2.1",
+    "overmind": "^23.0.1",
+    "overmind-react": "^24.0.1",
+    "proxy-polyfill": "^0.3.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-draggable": "^4.2.0",
+    "react-error-boundary": "^1.2.5",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-simple-maps": "^1.0.0-alpha.0",
+    "react-tooltip": "^4.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start-prod": "yarn build && yarn serve",
+    "serve": "node hoster/server.js",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
