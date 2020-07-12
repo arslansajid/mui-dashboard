@@ -13,7 +13,7 @@ async function init() {
 
   app.use(express.static(path.join(__dirname, '../build/')));
 
-  app.get('/api/*', proxy(`http://localhost:${apiServerPort}`));
+  // app.get('/api/*', proxy(`http://localhost:${apiServerPort}`));
 
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build/index.html'));

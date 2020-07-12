@@ -237,7 +237,7 @@ const usaEndPoints = {
   counties: '/countries/US/confirmed',
 };
 
-const appTitle = 'COVID19 Information Portal';
+const appTitle = 'Material-UI Dashboard';
 
 const copyright = {
   title: 'Copyright © ',
@@ -245,7 +245,7 @@ const copyright = {
 };
 
 const authorInfo = {
-  email: 'contact@surenatoyan.com',
+  email: 'arslansajid951@gmail.com',
   message: 'To Contact The Author',
 };
 

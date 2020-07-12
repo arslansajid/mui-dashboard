@@ -7,7 +7,7 @@ import WorldMap from 'components/Maps/World';
 import Settings from 'components/Maps/Settings';
 import Loading from 'components/Loading';
 
-import { useAPI } from 'api';
+// import { useAPI } from 'api';
 import { dataCorrection } from 'utils';
 
 import useStyles from './styles';
@@ -15,7 +15,9 @@ import useStyles from './styles';
 export default function Map() {
   const [setting, setSetting] = useState('confirmed');
   const [tooltipContent, setTooltipContent] = useState('');
-  const [covidData, isCovidDataLoading] = useAPI('/confirmed?level=countryRegion');
+  // const [covidData, isCovidDataLoading] = useAPI('/confirmed?level=countryRegion');
+  const covidData = [];
+  const isCovidDataLoading = false;
   const classes = useStyles();
 
   const handleSettingsChange = event => {

@@ -7,7 +7,7 @@ import Settings from 'components/Maps/Settings';
 import USAMap from 'components/Maps/USA';
 import Loading from 'components/Loading';
 
-import { useAPI } from 'api';
+// import { useAPI } from 'api';
 import { usaEndPoints } from 'config';
 
 import useStyles from './styles';
@@ -16,7 +16,10 @@ export default function USA() {
   const [setting, setSetting] = useState('confirmed');
   const [tooltipContent, setTooltipContent] = useState('');
   const [dividedInto, setDividedInto] = useState('states');
-  const [data, isLoading] = useAPI(usaEndPoints[dividedInto]);
+  // const [data, isLoading] = useAPI(usaEndPoints[dividedInto]);
+
+  const data = [];
+  const isLoading = false;
   const classes = useStyles();
 
   const handleSettingsChange = event => {

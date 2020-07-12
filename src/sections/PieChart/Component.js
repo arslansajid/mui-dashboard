@@ -6,11 +6,13 @@ import Card from 'components/Card';
 
 import { useNivoTheme } from 'theme';
 import { convertToPieChartData } from 'utils';
-import { useAPI } from 'api';
+// import { useAPI } from 'api';
 
 export default function _PieChart({ title, criterion, color }) {
-  const [data, isLoading] = useAPI('/confirmed?level=countryRegion');
+  // const [data, isLoading] = useAPI('/confirmed?level=countryRegion');
   const theme = useNivoTheme();
+  const data = [];
+  const isLoading = false;
 
   return isLoading
     ? <Loading />

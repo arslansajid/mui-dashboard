@@ -9,7 +9,7 @@ import LineChartButtons from 'components/Charts/Line/Button';
 
 import { useNivoTheme } from 'theme';
 import { convertToLineChartData, formatTooltipDate } from 'utils';
-import { useAPI } from 'api';
+// import { useAPI } from 'api';
 
 import useStyles from './styles';
 
@@ -42,10 +42,12 @@ function getTooltipContent(point, type) {
 }
 
 export default function ProgressChart() {
-  const [data, isLoading] = useAPI('/daily');
+  // const [data, isLoading] = useAPI('/daily');
   const [type, setType] = useState('log');
   const classes = useStyles();
   const theme = useNivoTheme();
+  const data = [];
+  const isLoading = false;
 
   function handleTypeChange(type) {
     setType(type);

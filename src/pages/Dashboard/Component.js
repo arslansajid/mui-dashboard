@@ -21,19 +21,19 @@ export default function Dashboard() {
         {/* Summary */}
         <Grid item xs={12} md={4} lg={3}>
           <Paper className={fixedHeightPaper}>
-            <Summary />
+            <Summary /> 
           </Paper>
         </Grid>
         {/* ProgressChart */}
         <Grid item xs={12} md={8} lg={9}>
           <Paper className={fixedHeightPaper}>
-             <ProgressChart />
+             {/* <ProgressChart /> */}
           </Paper>
         </Grid>
         {/* Recent ReportByCountries */}
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <ReportByCountries />
+            {/* <ReportByCountries /> */}
           </Paper>
         </Grid>
       </Grid>

@@ -122,6 +122,7 @@ export default function Menu({ isOpen, onClose, onOpen }) {
       onClose={isMobile ? (onClose) : noop}
     >
       <div className={classes.toolbarIcon}>
+        <h3>MUI-Logo </h3>
         <IconButton
           onClick={onClose}
           aria-label="close drawer"
