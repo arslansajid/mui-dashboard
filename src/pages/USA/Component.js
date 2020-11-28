@@ -8,7 +8,7 @@ import USAMap from 'components/Maps/USA';
 import Loading from 'components/Loading';
 
 // import { useAPI } from 'api';
-import { usaEndPoints } from 'config';
+// import { usaEndPoints } from 'config';
 
 import useStyles from './styles';
 

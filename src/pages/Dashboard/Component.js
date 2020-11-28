@@ -5,9 +5,9 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
-import ProgressChart from 'sections/ProgressChart';
+// import ProgressChart from 'sections/ProgressChart';
 import Summary from 'sections/Summary';
-import ReportByCountries from 'sections/ReportByCountries';
+// import ReportByCountries from 'sections/ReportByCountries';
 
 import useStyles from './styles';
 
@@ -21,13 +21,13 @@ export default function Dashboard() {
         {/* Summary */}
         <Grid item xs={12} md={4} lg={3}>
           <Paper className={fixedHeightPaper}>
-            <Summary /> 
+            <Summary />
           </Paper>
         </Grid>
         {/* ProgressChart */}
         <Grid item xs={12} md={8} lg={9}>
           <Paper className={fixedHeightPaper}>
-             {/* <ProgressChart /> */}
+            {/* <ProgressChart /> */}
           </Paper>
         </Grid>
         {/* Recent ReportByCountries */}
